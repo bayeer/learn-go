@@ -1,0 +1,32 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	numbers := []int{1, 2, 3, 4, 5}
+
+	fmt.Printf("Slice of ints: %v\n", numbers)
+	fmt.Printf("Length: %d\n", len(numbers))
+
+	fmt.Println()
+
+	empty := []int{}
+	fmt.Printf("Empty slice: %v\n", empty)
+	fmt.Printf("Length: %d\n", len(empty))
+
+	fmt.Println()
+
+	names := []string{"Badma", "Erdem", "Zhargal", "Bair"}
+	fmt.Printf("Slice of strings: %v\n", names)
+	fmt.Printf("Length: %d\n", len(names))
+}
+
+func NewEmptySlice() []int {
+	return []int{}
+}
+
+func NewIntSlice() []int {
+	return []int{1, 2, 3, 4, 5}
+}
